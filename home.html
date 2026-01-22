@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Public Transport Information System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="head-1">
+ <div class="heading">  
+<div class="h-1">
+<img src="./images/icons8-bus-100.png" width="70px" height="70px" alt="">
+<h1>Smart Public Transport Information System</h1>
+</div>
+<p>Real time Route planning it was just a demo</p>
+ </div>
+ </div>
+<div class="container">
+    <p class="description">
+        Plan routes, estimate arrival time, and get delay alerts using simulated public transport data.
+    </p>
+
+    <form id="routeForm">
+        <label>&#128204Source:</label>
+        <input type="text" id="source" placeholder="Enter source location" required />
+
+        <label>&#128205Destination:</label>
+        <input type="text" id="destination" placeholder="Enter destination location" required />
+
+        <label>&#128336Time of Travel:</label>
+        <input type="time" id="time" required />
+
+        <label>&#128645Travel Preference:</label>
+        <select id="preference" required>
+            <option value="">Select preference</option>
+            <option value="fastest">Fastest Route</option>
+            <option value="least">Least Transfers</option>
+        </select>
+
+        <button type="submit">&#128743Find Route</button>
+    </form>
+
+    <div id="result" class="result-box">
+        <h3>Result</h3>
+        <p>Submit the form to see the results and the results are shown are for demonstration purposes only </p>
+    </div>
+</div>
+<div class="Admin-m">
+<div class="admin-page">
+    <h3>Admin Dashboard access</h3>
+    <button>
+        <a href="./admin.html">&#128706;Admin-page</a>
+    </button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

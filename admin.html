@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard | Smart Public Transport</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="Admin-container">
+        <h1>Admin Dashboard</h1>
+        <p class="subtitle">
+            Monitoring routes, delays, and system status using simulated data
+        </p>
+        <section class="card">
+            <h2>System Overview</h2>
+            <ul>
+                <li>Total Routes: <strong>12</strong></li>
+                <li>Active Routes: <strong>9</strong></li>
+                <li>Routes with Delays: <strong>3</strong></li>
+                <li>Peak Hour Status: <strong>Active</strong></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Route Status</h2>
+            <table>
+                <tr>
+                    <th>Route</th>
+                    <th>Status</th>
+                    <th>Delay</th>
+                </tr>
+                <tr>
+                    <td>Nellore → Tirupati</td>
+                    <td>Active</td>
+                    <td>Minor</td>
+                </tr>
+                <tr>
+                    <td>Nellore → Chennai</td>
+                    <td>Active</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Tirupati → Chennai</td>
+                    <td>Delayed</td>
+                    <td>Moderate</td>
+                </tr>
+            </table>
+        </section>
+        <section class="card">
+            <h2>Recent Alerts</h2>
+            <ul>
+                <li>Minor delay reported on Nellore → Tirupati</li>
+                <li>Peak-hour congestion detected</li>
+            </ul>
+        </section>
+        <section class="action-card">
+            <h2>Admin Actions (Demo)</h2>
+            <button onclick="sendDelayAlert()">Send Delay Alert</button>
+            <button onclick="sendRouteUpdate()">Update Route Status</button>
+            <button onclick="toggleAnalytics()">View Analytics</button>
+            <p class="note">
+                *Actions shown for demonstration purposes only.
+            </p>
+        </section>
+        <div class="card" id="analyticsSection" style="display:none;">
+    <h2>Analytics (Simulated)</h2>
+
+    <ul>
+        <li><strong>Most Used Route:</strong> Nellore → Tirupati (65%)</li>
+        <li><strong>Peak Delay Hours:</strong> 8–10 AM, 5–7 PM</li>
+        <li><strong>Preferred Travel Option:</strong> Fastest Route</li>
+        <li><strong>Total Trips Simulated:</strong> 120</li>
+    </ul>
+
+    <p class="note">
+        Analytics shown are based on simulated usage data for prototype demonstration.
+    </p>
+</div>
+        <footer>
+            <p>
+                This admin dashboard is a prototype using simulated data.
+                Real-time monitoring and controls can be added in a full-scale deployment.
+            </p>
+            <a href="home.html">← Back to User View</a>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
